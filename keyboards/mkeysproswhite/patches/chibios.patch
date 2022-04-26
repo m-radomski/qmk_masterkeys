@@ -1,0 +1,13 @@
+diff --git a/os/common/startup/ARMCMx/compilers/GCC/ld/rules_code.ld b/os/common/startup/ARMCMx/compilers/GCC/ld/rules_code.ld
+index 5a288afbd..762dce156 100644
+--- a/os/common/startup/ARMCMx/compilers/GCC/ld/rules_code.ld
++++ b/os/common/startup/ARMCMx/compilers/GCC/ld/rules_code.ld
+@@ -18,7 +18,7 @@ ENTRY(Reset_Handler)
+ 
+ SECTIONS
+ {
+-    .vectors : ALIGN(1024)
++    .vectors : ALIGN(4)
+     {
+         KEEP(*(.vectors))
+     } > VECTORS_FLASH AT > VECTORS_FLASH_LMA

@@ -1,0 +1,13 @@
+diff --git a/os/hal/ports/HT32/LLD/TIMv1/hal_gpt_lld.c b/os/hal/ports/HT32/LLD/TIMv1/hal_gpt_lld.c
+index ce4555e1..ceb0beee 100644
+--- a/os/hal/ports/HT32/LLD/TIMv1/hal_gpt_lld.c
++++ b/os/hal/ports/HT32/LLD/TIMv1/hal_gpt_lld.c
+@@ -101,7 +101,7 @@ void gpt_lld_init(void) {
+ #endif
+ #if HT32_GPT_USE_BFTM1 == TRUE
+     gptObjectInit(&GPTD_BFTM1);
+-    GPTD_BFTM0.BFTM = BFTM1;
++    GPTD_BFTM1.BFTM = BFTM1;
+ #endif
+ }
+ 

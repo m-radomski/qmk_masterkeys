@@ -1,0 +1,13 @@
+diff --git a/os/common/startup/ARMCMx/compilers/GCC/ld/rules_code.ld b/os/common/startup/ARMCMx/compilers/GCC/ld/rules_code.ld
+index bc36b1cf2..fafa65b63 100644
+--- a/os/common/startup/ARMCMx/compilers/GCC/ld/rules_code.ld
++++ b/os/common/startup/ARMCMx/compilers/GCC/ld/rules_code.ld
+@@ -18,7 +18,7 @@ ENTRY(Reset_Handler)
+ 
+ SECTIONS
+ {
+-    .vectors : ALIGN(1024)
++    .vectors : ALIGN(512)
+     {
+         __textvectors_base__ = LOADADDR(.vectors);
+         __vectors_base__ = .;

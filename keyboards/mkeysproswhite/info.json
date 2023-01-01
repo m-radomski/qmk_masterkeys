@@ -1,0 +1,10 @@
+{
+    "manufacturer": "github.com/mateuszradomski",
+    "keyboard_name": "chomiboard2.0",
+    "maintainer": "mateuszradomski",
+    "usb": {
+        "vid": "0x2000",
+        "pid": "0x0608"
+        "device_version": "4.2.0"
+    },
+}
